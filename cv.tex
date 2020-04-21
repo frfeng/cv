@@ -25,6 +25,8 @@
 \definecolor{darkblue}{rgb}{0.0,0,0.5}
 \hypersetup{colorlinks=true,urlcolor=darkblue,linkcolor=darkblue}
 
+\usepackage{setspace}  % change line spacing
+
 % bibliography
 \usepackage[maxbibnames=99,sorting=none,backend=biber,bibencoding=utf8]{biblatex}
 
@@ -67,24 +69,29 @@
 {\fontfamily{phv}\selectfont\Huge\textbf{Fred Feng}}  % name
 
 \hfill\break
+\hfill\break
+\hfill\break
 
 \begin{flushright}
-University of Michigan-Dearborn \\
-Industrial and Manufacturing Systems Engineering \\
-4901 Evergreen Rd, Dearborn, MI 48128 \\
-\href{mailto:fredfeng@umich.edu}{fredfeng@umich.edu} \\
-\url{https://www.umich.edu/\~fredfeng} \\
+{\setstretch{1.15}
+University of Michigan-Dearborn\\
+Industrial and Manufacturing Systems Engineering\\
+4901 Evergreen Rd, Dearborn, MI 48128\\
+\href{mailto:fredfeng@umich.edu}{fredfeng@umich.edu}\\
+\url{https://www.umich.edu/\~fredfeng}\\
+\url{https://github.com/frfeng}\\
+\url{https://twitter.com/fredfeng}\\
+}
 \end{flushright}
-
 \end{multicols}
 
-\vspace{-2em}
+\vspace{-6ex}
 \noindent\makebox[\linewidth]{\rule{\textwidth}{0.8pt}}
 
 \section*{Research interests}
 \begin{main}
 
-\textbf{Methods}: 
+\textbf{Methods}:
 Behavioral data analytics, 
 statistical learning, 
 causal inference, 
@@ -93,7 +100,7 @@ human performance modeling,
 human factors, 
 human-machine interaction
 
-\textbf{Applications}: 
+\textbf{Applications}:
 Human-centered mobility, 
 road safety, 
 bicycling \& pedestrian safety, 
@@ -130,7 +137,7 @@ Advisor: \href{http://www-personal.umich.edu/~yililiu/}{Yili Liu}
 \textbf{M.S., Mechanical Engineering}, 2009\\
 \href{https://www.tsinghua.edu.cn/en/index.htm}{Tsinghua University}, China\\
 Thesis: Driver drowsiness detection based on multi-sensor data fusion\\
-Advisor: \href{https://www.tsinghua.edu.cn/publish/daeen/4370/2011/20110420161543357940142/20110420161543357940142_.html}{Bo Cheng}
+Advisor: \href{http://www.svm.tsinghua.edu.cn/essay/74/364.html}{Bo Cheng}
 
 \textbf{B.E., Automotive Engineering}, 2006\\
 \href{https://www.tsinghua.edu.cn/en/index.htm}{Tsinghua University}, China
@@ -193,7 +200,6 @@ Before becoming a faculty member, I was the primary proposal writer of the grant
     feng2017can,
     feng2017computer,
     cheng2012driver,
-    cheng2009driver,
   }
 \printbibliography[heading=none]  % remove the References heading
 \end{refsection}
@@ -239,6 +245,7 @@ Before becoming a faculty member, I was the primary proposal writer of the grant
 \begin{refsection}
   \nocite{
     zhang2010real,
+    cheng2009driver,
     cheng2008real,
     feng2008rear,
     cheng2007review,
