@@ -1,0 +1,194 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[paper=letterpaper,left=.75in,right=.75in,top=1in,bottom=1in]{geometry}
+
+\usepackage{parskip,multicol,xurl}
+\usepackage{baskervald}    % default font
+
+\usepackage{changepage}
+\newenvironment{main}
+{\begin{adjustwidth}{3em}{}}
+{\end{adjustwidth}}
+
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Fred Feng}
+\lhead{Short Curriculum Vit\ae}
+\cfoot{\thepage\ of \pageref*{LastPage}}
+
+\renewcommand{\baselinestretch}{1.3}  % line spacing
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\definecolor{darkblue}{rgb}{0.0,0,0.5}
+\hypersetup{colorlinks=true,urlcolor=darkblue,linkcolor=darkblue}
+
+\usepackage{setspace}  % change line spacing
+
+% bibliography
+\usepackage[maxbibnames=99,sorting=none,backend=biber,bibencoding=utf8,doi=false]{biblatex}
+
+\addbibresource{publications.bib}
+
+\setlength\bibitemsep{0.5\baselineskip} % increase spacing between items
+
+\DeclareFieldFormat{labelnumberwidth}{#1\adddot}  % remove the bracket
+
+\renewbibmacro{in:}{}  % suppress "In:"
+
+% highlight the name of myself
+\renewcommand*{\mkbibnamegiven}[1]{%
+  \ifitemannotation{highlight}
+    {\textcolor{BrickRed}{#1}}
+    {#1}}
+    
+\renewcommand*{\mkbibnamefamily}[1]{%
+  \ifitemannotation{highlight}
+    {\textcolor{BrickRed}{#1}}
+    {#1}}
+
+\urlstyle{same}    % use the same font style for url
+
+\newcommand{\FredFeng}{\textcolor{BrickRed}{Fred Feng}}
+\newcommand{\RuijiaFeng}{\textcolor{BrickRed}{Ruijia Feng}}
+
+\title{\vspace{-6em}}   % reduce the blank space above title
+\author{}
+\date{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Begin CV %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\maketitle
+
+\begin{multicols}{2}
+
+{\fontfamily{phv}\selectfont\Huge\textbf{Fred Feng}}  % name
+
+\hfill\break
+\hfill\break
+\hfill\break
+
+\begin{flushright}
+{\setstretch{1.15}
+University of Michigan-Dearborn\\
+Industrial and Manufacturing Systems Engineering\\
+4901 Evergreen Rd, Dearborn, MI 48128\\
+\href{mailto:fredfeng@umich.edu}{fredfeng@umich.edu}\\
+\url{https://umich.edu/~fredfeng}\\
+}
+\end{flushright}
+\end{multicols}
+
+\vspace{-10ex}
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.8pt}}
+
+\vspace{-2ex}
+\section*{Research interests}
+\begin{main}
+
+\textbf{Methods}:
+Behavioral data analytics, 
+statistical learning, 
+data visualization, 
+human performance modeling, 
+human factors, 
+human-machine interaction
+
+\textbf{Applications}:
+Human-centered mobility, 
+cycling safety, 
+pedestrian safety, 
+driver behavior, 
+sustainable transportation, 
+automated vehicles
+
+\end{main}
+\section*{Employment}
+\begin{main}
+
+\textbf{University of Michigan-Dearborn}, Department of Industrial and Manufacturing Systems Engineering
+
+\begin{itemize}
+    \item[] \textbf{Assistant Professor}, September 2018–present
+\end{itemize}
+
+\textbf{University of Michigan Transportation Research Institute (\href{http://www.umtri.umich.edu/}{UMTRI})}, Human Factors group
+
+\begin{itemize}
+    \item[] \textbf{Postdoctoral Research Fellow}, May 2015–August 2018, Supervisor: \href{https://sites.google.com/umich.edu/hfet-lab/people}{Shan Bao}
+\end{itemize}
+
+
+\end{main}
+\section*{Education}
+\begin{main}
+
+\textbf{Ph.D., \href{https://ioe.engin.umich.edu/}{Industrial and Operations Engineering}}, 2015\\
+\href{https://umich.edu/}{University of Michigan, Ann Arbor}, Advisor: \href{https://ioe.engin.umich.edu/people/yili-liu/}{Yili Liu}
+
+\textbf{M.S., Mechanical Engineering}, 2009\\
+\href{https://www.tsinghua.edu.cn/en/index.htm}{Tsinghua University}, China, Advisor: \href{http://www.svm.tsinghua.edu.cn/essay/74/364.html}{Bo Cheng}
+
+\textbf{B.E., Automotive Engineering}, 2006\\
+\href{https://www.tsinghua.edu.cn/en/index.htm}{Tsinghua University}, China
+
+
+\end{main}
+\section*{Grants}
+\begin{main}
+
+\textbf{Assistant Professor @ University of Michigan-Dearborn}
+
+\begin{enumerate}
+    \item “A continued naturalistic bicycling study in Ann Arbor and bicycle corner case simulation in CARLA” \\
+        Sponsor: \href{https://www.tri.global/}{Toyota Research Institute}, 24 months (2019-2020), PI: Fred Feng
+    \item “Developing Bicycle-Related Corner Case Scenarios and a Bicyclist Model for Testing Self-Driving Cars Using Naturalistic Driving Data and Crash Data” \\
+        Sponsor: \href{https://www.tri.global/}{Toyota Research Institute}, 7 months (2018-2019), Subaward, PI: Fred Feng
+    \item “A naturalistic bicycling study in the Ann Arbor area” \\
+        Sponsor: \href{https://www.tri.global/}{Toyota Research Institute}, 4 months (2018), Subaward, PI: Fred Feng
+
+    \end{enumerate}
+
+\textbf{Campus Internal Grants}
+\begin{enumerate}
+    \item “A Browser-based Tool for Interactive Visualizations of Probability Distributions” \\
+        UM-Dearborn Open Educational Resources (OER) Supplemental Materials Grant (\$500), 2020
+\end{enumerate}
+
+\end{main}
+\section*{Selected publications}
+\begin{main}
+
+\vspace{-5ex}
+
+    \textbf{}
+    \begin{refsection}
+      \nocite{
+        yu2019examination,
+        feng2018estimation,
+        feng2018drivers,
+        feng2018effects,
+        feng2017can,
+        feng2017computer,
+      }
+    \printbibliography[heading=none]  % remove the References heading
+    \end{refsection}
+
+\end{main}
+
+\section*{Teaching at UM-Dearborn}
+\begin{main}
+
+\begin{itemize}
+    \item \textbf{IMSE 586 Big Data Analytics and Visualization}, Fall 2018, 2019
+    \item \textbf{IMSE 440 Applied Statistical Models in Engineering}, Winter 2020
+    \item \textbf{IMSE 317 Engineering Probability and Statistics}, Winter 2019
+\end{itemize}
+
+\end{main}
+
+\end{document}
