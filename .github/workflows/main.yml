@@ -10,8 +10,6 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: cv.tex
-      # - name: Check output
-      #   run: ls
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
