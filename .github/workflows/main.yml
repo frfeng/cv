@@ -10,7 +10,8 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: cv.tex
-      - name: Release
-        uses: softprops/action-gh-release@v1
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v3
         with:
-          tag_name: CV
+          name: PDF
+          path: cv.pdf
